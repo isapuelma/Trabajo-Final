@@ -1,13 +1,221 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en proceso</title>
-  </head>
-  <body>
-    <h1>Hola mundo!</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabel Puelma | Diseño Estratégico & Branding</title>
+    <meta name="description" content="Portafolio de diseño multidisciplinario enfocado en branding, dirección de arte y diseño web.">
+    
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="brand-name">Isabel Puelma<span class="dot">.</span></div>
+        <nav class="nav-menu">
+            <a href="about.html" class="nav-link">Sobre mí</a>
+            <a href="index.html" class="nav-link active">Proyectos</a>
+            <a href="contact.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="about.html" class="mobile-link">Sobre mí</a>
+        <a href="index.html" class="mobile-link">Proyectos</a>
+        <a href="contact.html" class="mobile-link">Contacto</a>
+    </div>
+
+    <!-- Scroll Btn -->
+    <button id="scrollToFooterBtn" class="scroll-btn-floating" aria-label="Ir al pie de página">
+        <i class="ph ph-arrow-down"></i>
+    </button>
+
+    <main class="main-content">
+
+        <!-- Proyecto 1 -->
+        <section class="project-section">
+            <div class="info-column">
+                <div>
+                    <span class="project-index">01 — 2024</span>
+                    <a href="proyect.html">
+                        <h2 class="project-title">CODU<br>Branding</h2>
+                    </a>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Web</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="description-text">Identidad visual que conecta tecnología y humanidad, creando una experiencia de marca coherente y memorable.</p>
+                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
+                </div>
+            </div>
+            <div class="image-column">
+                <a href="proyect.html" class="project-image-link">
+                    <div class="project-image-container">
+                        <!-- Carga prioritaria (Eager) porque está arriba -->
+                        <img src="codu.jpg" alt="CODU Branding Identidad" class="project-image" width="800" height="600">
+                    </div>
+                </a>
+            </div>
+            <div class="project-footer">
+                <div class="project-index">(01)</div>
+                <div class="project-meta">
+                    <a href="proyect.html">CODU - BRANDING</a>
+                    <span>2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto 2 -->
+        <section class="project-section">
+            <div class="info-column">
+                <div>
+                    <span class="project-index">02 — 2024</span>
+                    <a href="proyect.html">
+                        <h2 class="project-title">ALMA<br>Branding</h2>
+                    </a>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Ilustración</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
+                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
+                </div>
+            </div>
+            <div class="image-column">
+                <a href="proyect.html" class="project-image-link">
+                    <div class="project-image-container">
+                        <!-- Lazy load para mejor performance -->
+                        <img src="alma.jpg" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
+                    </div>
+                </a>
+            </div>
+            <div class="project-footer">
+                <div class="project-index">(02)</div>
+                <div class="project-meta">
+                    <a href="proyect.html">ALMA - BRANDING</a>
+                    <span>2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto 3 -->
+        <section class="project-section">
+            <div class="info-column">
+                <div>
+                    <span class="project-index">02 — 2024</span>
+                    <a href="proyect.html">
+                        <h2 class="project-title">Broderie<br>Branding</h2>
+                    </a>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Web</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
+                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
+                </div>
+            </div>
+            <div class="image-column">
+                <a href="proyect.html" class="project-image-link">
+                    <div class="project-image-container">
+                        <!-- Lazy load para mejor performance -->
+                        <img src="" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
+                    </div>
+                </a>
+            </div>
+            <div class="project-footer">
+                <div class="project-index">(02)</div>
+                <div class="project-meta">
+                    <a href="proyect.html">ALMA - BRANDING</a>
+                    <span>2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto 4 -->
+        <section class="project-section">
+            <div class="info-column">
+                <div>
+                    <span class="project-index">02 — 2024</span>
+                    <a href="proyect.html">
+                        <h2 class="project-title">BEHEALTHY<br>Branding</h2>
+                    </a>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Ilustración</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
+                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
+                </div>
+            </div>
+            <div class="image-column">
+                <a href="proyect.html" class="project-image-link">
+                    <div class="project-image-container">
+                        <!-- Lazy load para mejor performance -->
+                        <img src="" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
+                    </div>
+                </a>
+            </div>
+            <div class="project-footer">
+                <div class="project-index">(02)</div>
+                <div class="project-meta">
+                    <a href="proyect.html">ALMA - BRANDING</a>
+                    <span>2024</span>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Footer -->
+        <footer class="site-footer" id="theFooter">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4 class="footer-title">Sígueme</h4>
+                    <div class="footer-links">
+                        <a href="https://www.instagram.com/is4.54i/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link" target="_blank" rel="noopener">Linkedin</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:mipuelma@uc.cl" class="footer-link">MIPUELMA@UC.CL</a>
+                        <span class="footer-text">(+569) 6682 2790</span>
+                        <span class="footer-text">SANTIAGO - CHILE</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Menú</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">SOBRE MÍ</a>
+                        <a href="index.html" class="footer-link">PROYECTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo-large">ISABEL PUELMA</div>
+        </footer>
+
+    </main>
+    <script src="portafolio.js"></script>
+</body>
 </html>
+
