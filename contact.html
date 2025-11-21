@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Isabel Puelma</title>
+    
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuentes y Scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="brand-name">Isabel Puelma<span class="dot">.</span></div>
+        <nav class="nav-menu">
+            <a href="about.html" class="nav-link">Sobre mí</a>
+            <a href="index.html" class="nav-link">Proyectos</a>
+            <a href="contact.html" class="nav-link active">Contacto</a>
+        </nav>
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="about.html" class="mobile-link">Sobre mí</a>
+        <a href="index.html" class="mobile-link">Proyectos</a>
+        <a href="contact.html" class="mobile-link">Contacto</a>
+    </div>
+
+    <!-- Botón Scroll (Consistencia UI) -->
+    <button id="scrollToFooterBtn" class="scroll-btn-floating" aria-label="Ir al pie de página">
+        <i class="ph ph-arrow-down"></i>
+    </button>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="contact-container">
+            
+            <div class="contact-header">
+                <h1 class="contact-title">Empecemos algo<br>atemporal.</h1>
+                <p class="contact-subtitle">¿Tienes un proyecto en mente? Cuéntame los detalles y construyamos juntos la identidad que tu marca merece.</p>
+            </div>
+    
+            <div class="contact-grid">
+                <!-- Info de Contacto -->
+                <div class="contact-info">
+                    <div class="info-group">
+                        <span class="info-label">Email</span>
+                        <a href="mailto:mipuelma@uc.cl" class="info-content">mipuelma@uc.cl</a>
+                    </div>
+                    
+                    <div class="info-group">
+                        <span class="info-label">Teléfono</span>
+                        <span class="info-content">+56 (9) 66 8 22 7 90</span>
+                    </div>
+    
+                    <div class="info-group">
+                        <span class="info-label">Ubicación</span>
+                        <span class="info-content">Santiago, Chile<br><span style="font-size: 0.9em; color:#666;">(Disponible Remoto Global)</span></span>
+                    </div>
+    
+                    <div class="info-group">
+                        <span class="info-label">Social</span>
+                        <div class="social-list">
+                            <a href="https://www.instagram.com/is4.54i/" class="social-link" target="_blank" rel="noopener">Instagram</a>
+                            <a href="https://www.linkedin.com/in/isabel-puelma/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="https://www.behance.net/isabelpuelma" class="social-link" target="_blank" rel="noopener">Behance</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Formulario -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-input" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="service" class="form-input" placeholder="Servicio de Interés (Branding, Web, etc.)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-textarea" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Global -->
+        <footer class="site-footer" id="theFooter">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4 class="footer-title">Sígueme</h4>
+                    <div class="footer-links">
+                        <a href="https://www.instagram.com/is4.54i/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link" target="_blank" rel="noopener">Linkedin</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:mipuelma@uc.cl" class="footer-link">MIPUELMA@UC.CL</a>
+                        <span class="footer-text">(+569) 6682 2790</span>
+                        <span class="footer-text">SANTIAGO - CHILE</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Menú</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">SOBRE MÍ</a>
+                        <a href="index.html" class="footer-link">PROYECTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo-large">ISABEL PUELMA</div>
+        </footer>
+    </main>
+
+    <!-- Conexión JS Corregida -->
+    <script src="portafolio.js"></script>
+</body>
+</html>

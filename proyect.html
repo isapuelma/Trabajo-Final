@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Proyecto | Isabel Puelma</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="brand-name">Isabel Puelma<span class="dot">.</span></div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Proyectos</a>
+            <a href="about.html" class="nav-link">Sobre mí</a>
+            <a href="contact.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="hamburger" id="hamburgerBtn">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="about.html" class="mobile-link">Sobre mí</a>
+        <a href="index.html" class="mobile-link">Proyectos</a>
+        <a href="contact.html" class="mobile-link">Contacto</a>
+    </div>
+
+    <main class="main-content">
+        <div class="project-detail-container">
+            <div class="project-grid-layout">
+                
+                <!-- Sticky Info -->
+                <div class="project-info-sticky">
+                    <h1 class="project-detail-title">Avsten<br>Identidad</h1>
+                    <ul class="project-meta-list">
+                        <li class="meta-item">
+                            <span class="meta-label">Año</span><span class="meta-value">2025</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Cliente</span><span class="meta-value">CODU</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Servicios</span><span class="meta-value">Branding, Web</span>
+                        </li>
+                    </ul>
+                    <div class="project-brief">
+                        <p>Avsten buscaba redefinir el concepto de cosmética natural, alejándose de los clichés verdes y terrosos. El objetivo era crear una identidad que respirara lujo silencioso, ciencia y pureza.</p>
+                    </div>
+                </div>
+
+                <!-- Galería -->
+                <div class="project-gallery">
+                    <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?q=80&w=2574&auto=format&fit=crop" alt="Detalle Branding 1" class="gallery-img" loading="eager">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop" alt="Detalle Branding 2" class="gallery-img" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=1780&auto=format&fit=crop" alt="Detalle Branding 3" class="gallery-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <section class="case-study-section">
+            <div class="case-grid">
+                <div class="case-col">
+                    <h3>El Desafío</h3>
+                    <p>El mercado de la cosmética natural está saturado de estéticas rústicas y artesanales. Avsten necesitaba posicionarse en un segmento premium, compitiendo con marcas de lujo establecidas, sin perder su esencia orgánica.</p>
+                </div>
+                <div class="case-col">
+                    <h3>La Solución</h3>
+                    <p>Optamos por un enfoque de "lujo clínico". Utilizamos una tipografía serifa afilada que evoca elegancia editorial, contrastada con un sistema de retículas muy estructurado inspirado en los prospectos médicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="index.html" class="next-project">
+            <span class="next-label">Siguiente Proyecto</span>
+            <h2 class="next-title">Lumière Editorial</h2>
+        </a>
+
+        <footer class="site-footer" id="theFooter">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4 class="footer-title">Sígueme</h4>
+                    <div class="footer-links">
+                        <a href="https://www.instagram.com/is4.54i/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link" target="_blank" rel="noopener">Linkedin</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:mipuelma@uc.cl" class="footer-link">MIPUELMA@UC.CL</a>
+                        <span class="footer-text">(+569) 6682 2790</span>
+                        <span class="footer-text">SANTIAGO - CHILE</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Menú</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">SOBRE MÍ</a>
+                        <a href="index.html" class="footer-link">PROYECTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo-large">ISABEL PUELMA</div>
+        </footer>
+    </main>
+    <script src="portafolio.js"></script>
+</body>
+</html>
