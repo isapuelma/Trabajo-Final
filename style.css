@@ -24,7 +24,7 @@ body {
 a { text-decoration: none; color: inherit; transition: all 0.3s ease; cursor: pointer; }
 
 /* --- Tipografía Global --- */
-h1, h2, h3, .brand-name, .nav-link, .project-title, .footer-logo-large {
+h1, h2, h3, .nav-link, .project-title, .footer-logo-large {
     font-family: 'Inter', sans-serif;
 }
 
