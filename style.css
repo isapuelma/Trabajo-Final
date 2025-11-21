@@ -39,6 +39,7 @@ h1, h2, h3, .brand-name, .nav-link, .project-title, .footer-logo-large {
 }
 
 .brand-name { 
+    font-family: Space Grotesk;
     font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; text-transform: uppercase; 
 }
 .dot { color: var(--accent-color); font-size: 1.2rem; line-height: 0; }
