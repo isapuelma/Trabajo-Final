@@ -38,7 +38,7 @@ h1, h2, h3, .nav-link, .project-title, .footer-logo-large {
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.brand-name { 
+.brand-name, .footer-logo-large{ 
     font-family: Space Grotesk;
     font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; text-transform: uppercase; 
 }
