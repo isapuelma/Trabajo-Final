@@ -6,7 +6,7 @@ const DATOS_GLOBALES = {
       "cliente": "Ilustración Creativa",
       "year": "2024",
       "servicios": ["Ilustración"],
-      "herramientas": ["Procreate",],
+      "herramientas": ["Procreate"],
       "descripcion": "Fanzine ilustrado para el curso de Ilustración Creativa.",
       "desafio": "Conectar con un público adulto evocando la nostalgia.",
       "solucion": "Un estilo de ilustración colorido y sencillo. Guiño a creencias colectivas durante la infancia.",
@@ -263,7 +263,7 @@ const DATOS_GLOBALES = {
       "descripcion": "Dirección de arte y captura digital.", 
       "icono": "ph-camera", 
       "herramientas": ["Cámara Digital", "Photoshop", "Lightroom"],
-      "filtro": "fotografia" 
+      "filtro": "fotografía" 
     },
     { 
       "titulo": "Ilustración", 
@@ -275,3 +275,4 @@ const DATOS_GLOBALES = {
   ]
 
 };
+
