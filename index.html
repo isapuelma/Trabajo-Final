@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <!-- SEO & Metadatos -->
     <title>Isabel Puelma | Diseño Estratégico</title>
-    <!-- META DESCRIPCIÓN POTENCIADA -->
-    <meta name="description" content="Diseño Estratégico y Visual por Isabel Puelma. Transformo marcas mediante Branding y sistemas de diseño escalables. Santiago, Chile.">
+ 
+    <meta name="description" content="Diseño Estratégico y Visual por Isabel Puelma. Transformo marcas mediante branding y sistemas de diseño escalables. Santiago, Chile.">
     <meta name="author" content="Isabel Puelma">
     <meta name="keywords" content="diseño estratégico, branding, diseño web, dirección de arte, packaging, sistemas de diseño, santiago, chile">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://isabelpuelma.cl/">
     <meta property="og:title" content="Isabel Puelma | Diseño Estratégico & Visual">
     <meta property="og:description" content="Ayudo a marcas ambiciosas a encontrar su voz y crear sistemas de diseño escalables.">
     <meta property="og:image" content="https://isabelpuelma.cl/isabelpuelma.jpg">
 
-    <!-- Twitter -->
+
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Isabel Puelma | Diseño Estratégico">
     <meta property="twitter:description" content="Ayudo a marcas ambiciosas a encontrar su voz.">
     <meta property="twitter:image" content="https://isabelpuelma.cl/isabelpuelma.jpg">
 
-    <link rel="icon" href="isa.svg" type="image/svg+xml">
+    <link rel="icon" href="https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/isa.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,22 +31,17 @@
 </head>
 <body>
     
-    <!-- ========================================== -->
-    <!-- SPLASH SCREEN INTRO (INTERACTIVA) -->
-    <!-- ========================================== -->
+
     <div class="splash-screen" id="splashOverlay">
         <div class="splash-logo-container">
-            <!-- Usamos tu logo SVG -->
             <img src="isabelpuelma.svg" alt="Isabel Puelma Intro" class="splash-logo-img">
         </div>
     </div>
 
-    <!-- SCRIPT DE CONTROL DE INTRO -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const splash = document.getElementById('splashOverlay');
             
-            // Verificamos si ya vio la intro en esta sesión
             if (!sessionStorage.getItem('introShown')) {
                 
                 let isDismissing = false;
@@ -61,10 +54,8 @@
                     sessionStorage.setItem('introShown', 'true');
                 };
 
-                // Fallback Automático
                 const autoTimer = setTimeout(startFadeOut, 3500);
-
-                // Interacción Inteligente
+               
                 setTimeout(() => {
                     window.addEventListener('mousemove', startFadeOut, { once: true });
                     window.addEventListener('click', startFadeOut, { once: true });
@@ -76,7 +67,7 @@
             }
         });
     </script>
-    <!-- ========================================== -->
+
 
     <header class="header">
         <a href="index.html" class="brand-name">
@@ -185,4 +176,5 @@
                 © 2025 Isabel Puelma. Todos los derechos reservados.
             </div>
         </footer>
+
     </m
