@@ -11,14 +11,14 @@ const DATOS_GLOBALES = {
       "desafio": "Conectar con un público adulto evocando la nostalgia.",
       "solucion": "Un estilo de ilustración colorido y sencillo. Guiño a creencias colectivas durante la infancia.",
       "cita": "Peque capturó la curiosidad de la infancia.",
-      "imagen": "PEQUE.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/PEQUE.jpg",
       "galeria": [
-        "peque1.jpg",
-        "peque2.jpg",
-        "peque3.jpg",
-        "peque4.jpg",
-        "peque5.jpg",
-        "peque6.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque4.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque5.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/peque6.jpg"
       ],
       "categoria": "Ilustración",
       "filtro": "editorial ilustracion",
@@ -35,14 +35,14 @@ const DATOS_GLOBALES = {
       "desafio": "Trasladar una visión artística abstracta a una marca comercial sólida.",
       "solucion": "Un branding minimalista con toques urbanos y energéticos.",
       "cita": "Lograron traducir nuestra visión artística abstracta en una plataforma funcional.",
-      "imagen": "codu.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu.jpg",
       "galeria": [
-        "codu1.jpg",
-        "codu2.jpg",
-        "codu3.jpg",
-        "codu4.jpg",
-        "codu5.jpg",
-        "codu6.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu4.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu5.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/codu6.jpg"
       ],
       "categoria": "Branding Web",
       "filtro": "branding web",
@@ -61,7 +61,8 @@ const DATOS_GLOBALES = {
       "cita": "La nueva colección se ve increíblemente profesional en la web.",
       "imagen": "hongos.jpg",
       "galeria": [
-        "hongos2.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hongos.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hongos2.jpg"
         
       ],
       "categoria": "Packaging",
@@ -79,10 +80,10 @@ const DATOS_GLOBALES = {
       "desafio": "Transmitir la sensación de 'sueño profundo' y relajación nocturna.",
       "solucion": "Una etiqueta que utiliza tonos nocturnos y gradientes suaves.",
       "cita": "La etiqueta comunica exactamente lo que hace el producto: descanso reparador.",
-      "imagen": "nightboost.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/nightboost.jpg",
       "galeria": [
-        "nightboost1.jpg",
-        "nightboost2.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/nightboost1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/nightboost2.jpg"
       ],
       "categoria": "Packaging",
       "filtro": "packaging",
@@ -99,12 +100,12 @@ const DATOS_GLOBALES = {
       "desafio": "Unificar una identidad visual fragmentada.",
       "solucion": "Una identidad cohesiva que conecta emocionalmente.",
       "cita": "La nueva identidad nos ha permitido conectar con donantes.",
-      "imagen": "alma.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/alma.jpg",
       "galeria": [
-        "alma1.jpg",
-        "alma3.jpg",
-        "alma4.jpg",
-        "alma5.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/alma1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/alma3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/alma4.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/alma5.jpg"
       ],
       "categoria": "Branding",
       "filtro": "branding",
@@ -121,11 +122,11 @@ const DATOS_GLOBALES = {
       "desafio": "Insertar en el mapa digital a una marca tradicional.",
       "solucion": "Un sitio web minimalista y funcional.",
       "cita": "Después de 12 años, por fin tenemos una sucursal digital.",
-      "imagen": "broderie.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/broderie.jpg",
       "galeria": [
-        "broderie1.jpg",
-        "broderie2.jpg",
-        "broderie3.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/broderie1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/broderie2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/broderie3.jpg"
       ],
       "categoria": "Diseño Web",
       "filtro": "web branding",
@@ -142,12 +143,12 @@ const DATOS_GLOBALES = {
       "desafio": "La marca original era poco práctica.",
       "solucion": "Se desarrolló una identidad minimalista y fresca.",
       "cita": "Pasamos de vernos como un producto genérico a ser una marca de bienestar moderna.",
-      "imagen": "behealthy.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/behealthy.jpg",
       "galeria": [
-        "behealthy2.jpg",
-        "behealthy3.jpg",
-        "behealthy4.jpg",
-        "behealthy5.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/behealthy2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/behealthy3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/behealthy4.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/behealthy5.jpg"
       ],
       "categoria": "Branding",
       "filtro": "branding",
@@ -164,11 +165,10 @@ const DATOS_GLOBALES = {
       "desafio": "Crear un empaque que gritara 'Verano' y 'Frescura' para un público joven, diferenciándose de los suplementos tradicionales aburridos y medicinales.",
       "solucion": "Un diseño de packaging vibrante, 'trendy' y lleno de energía, aplicando la nueva identidad de marca.",
       "cita": "El diseño capturó perfectamente la vibra veraniega que buscábamos.",
-      "imagen": "detox.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/detox.jpg",
       "galeria": [
-        "detox3.jpg",
-        "detox4.jpg",
-        "detox1.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/detox3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/detox4.jpg"
       ],
       "categoria": "Packaging",
       "filtro": "packaging branding",
@@ -185,11 +185,12 @@ const DATOS_GLOBALES = {
       "desafio": "Alejarse del Halloween típico de terror genérico.",
       "solucion": "Una estética 'Cute & Glamorous'.",
       "cita": "Una propuesta fresca, diferente y con mucho estilo.",
-      "imagen": "hallo1.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hallo1.jpg",
       "galeria": [
-        "hallo2.jpg",
-        "hallo3.jpg",
-        "hallo4.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hallo.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hallo2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hallo3.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/hallo4.jpg"
       ],
       "categoria": "Ilustración",
       "filtro": "ilustracion",
@@ -206,10 +207,10 @@ const DATOS_GLOBALES = {
       "desafio": "",
       "solucion": "",
       "cita": "",
-      "imagen": "print1.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/print1.jpg",
       "galeria": [
-        "print2.jpg",
-        "print3.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/print2.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/print3.jpg"
       ],
       "categoria": "Ilustración",
       "filtro": "ilustracion",
@@ -225,10 +226,10 @@ const DATOS_GLOBALES = {
       "descripcion": "Colección de moda upcycling inspirada en los 60s.",
       "desafio": "Capturar la esencia retro y la calidad de las prendas recicladas.",
       "solucion": "Dirección de arte y fotografía que resaltan las texturas.",
-      "imagen": "NEWLOOK.jpg",
+      "imagen": "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/NEWLOOK.jpg",
       "galeria": [
-        "NEWLOOK1.jpg",
-        "NEWLOOK2.jpg"
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/NEWLOOK1.jpg",
+        "https://raw.githubusercontent.com/isapuelma/Trabajo-Final/refs/heads/main/NEWLOOK2.jpg"
       ],
       "categoria": "Fotografía",
       "filtro": "fotografía",
@@ -272,4 +273,5 @@ const DATOS_GLOBALES = {
       "filtro": "ilustracion" 
     }
   ]
+
 };
