@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- SEO & Metadatos -->
+    <title>Archivo | Isabel Puelma</title>
+    <meta name="description" content="Archivo de proyectos 2024-2025. Selección de trabajos en Branding, Diseño Web, Packaging e Ilustración por Isabel Puelma.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isabelpuelma.com/gallery.html">
+    <meta property="og:title" content="Archivo de Proyectos | Isabel Puelma">
+    <meta property="og:description" content="Explora una selección de trabajos de diseño estratégico, packaging y branding.">
+    <!-- Usamos una imagen representativa de un proyecto fuerte -->
+    <meta property="og:image" content="https://isabelpuelma.com/codu.jpg">
+
+    <link rel="icon" href="isa.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="index.html" class="brand-name">
+            <img src="isabelpuelma.svg" alt="Isabel Puelma" class="brand-logo-img">
+        </a>
+        <nav class="nav-menu">
+            <a href="gallery.html" class="nav-link active">Archivo</a>
+            <a href="index.html" class="nav-link">Índice</a>
+            <a href="about.html" class="nav-link">Sobre mí</a>
+            <a href="contact.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></div>
+    </header>
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="gallery.html" class="mobile-link">Archivo</a>
+        <a href="index.html" class="mobile-link">Índice</a>
+        <a href="about.html" class="mobile-link">Sobre mí</a>
+        <a href="contact.html" class="mobile-link">Contacto</a>
+    </div>
+
+    <main>
+        <section class="pad-global pad-header" style="border-bottom: 1px solid var(--line-color); padding-bottom: 40px;">
+            <div class="grid-container no-border" style="border:none; align-items: end;">
+                <div class="col-span-8">
+                    <h1 class="display-text">Archivo<span class="text-accent">.</span></h1>
+                </div>
+                <div class="col-span-4" style="text-align: right;">
+                    <p style="font-family: var(--font-mono); text-transform: uppercase;">Selección 2024 — 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="packaging">Packaging</button>
+            <button class="filter-btn" data-filter="ilustracion">Ilustración</button>
+            <button class="filter-btn" data-filter="fotografía">Fotografía</button>
+        </div>
+
+        <section class="gallery-grid-section-variable" id="portfolio-grid">
+            <div style="padding: 100px; grid-column: span 12; text-align: center; font-family: var(--font-mono);">
+                Cargando proyectos...
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Contacto</h4>
+                    <a href="mailto:mipuelma@uc.cl" class="footer-link" style="font-size: 1.2rem;">mipuelma@uc.cl</a>
+                </div>
+                <div class="footer-col">
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Social</h4>
+                    <a href="https://www.instagram.com/is4.54i/" class="footer-link">Instagram</a><br>
+                    <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link">LinkedIn</a>
+                </div>
+                <div class="footer-col">
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Ubicación</h4>
+                    <p>Santiago, Chile</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2025 Isabel Puelma. Todos los derechos reservados.
+            </div>
+        </footer>
+    </main>
+    <script src="data.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+</html>

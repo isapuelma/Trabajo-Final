@@ -3,112 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de Proyecto | Isabel Puelma</title>
+    <meta name="robots" content="noindex, nofollow">
     
+    <!-- SEO & Metadatos Base -->
+    <title>Proyecto | Isabel Puelma</title>
+    <meta name="description" content="Detalle del proyecto de diseño desarrollado por Isabel Puelma. Estrategia, desafío y solución visual.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Proyecto | Isabel Puelma">
+    <meta property="og:description" content="Conoce los detalles de este caso de estudio de diseño estratégico.">
+    <meta property="og:image" content="https://isabelpuelma.com/isa.svg">
+
+    <link rel="icon" href="isa.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-
+    
     <header class="header">
-        <div class="brand-name">Isabel Puelma<span class="dot">.</span></div>
+        <a href="index.html" class="brand-name">
+            <img src="isabelpuelma.svg" alt="Isabel Puelma" class="brand-logo-img">
+        </a>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link active">Proyectos</a>
+            <a href="gallery.html" class="nav-link">Archivo</a>
+            <a href="index.html" class="nav-link">Índice</a>
             <a href="about.html" class="nav-link">Sobre mí</a>
             <a href="contact.html" class="nav-link">Contacto</a>
         </nav>
-        <div class="hamburger" id="hamburgerBtn">
-            <span></span><span></span><span></span>
-        </div>
+        <div class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></div>
     </header>
-
     <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="gallery.html" class="mobile-link">Archivo</a>
+        <a href="index.html" class="mobile-link">Índice</a>
         <a href="about.html" class="mobile-link">Sobre mí</a>
-        <a href="index.html" class="mobile-link">Proyectos</a>
         <a href="contact.html" class="mobile-link">Contacto</a>
     </div>
 
-    <main class="main-content">
-        <div class="project-detail-container">
-            <div class="project-grid-layout">
-                
-                <!-- Sticky Info -->
-                <div class="project-info-sticky">
-                    <h1 class="project-detail-title">Avsten<br>Identidad</h1>
-                    <ul class="project-meta-list">
-                        <li class="meta-item">
-                            <span class="meta-label">Año</span><span class="meta-value">2025</span>
-                        </li>
-                        <li class="meta-item">
-                            <span class="meta-label">Cliente</span><span class="meta-value">CODU</span>
-                        </li>
-                        <li class="meta-item">
-                            <span class="meta-label">Servicios</span><span class="meta-value">Branding, Web</span>
-                        </li>
-                    </ul>
-                    <div class="project-brief">
-                        <p>Avsten buscaba redefinir el concepto de cosmética natural, alejándose de los clichés verdes y terrosos. El objetivo era crear una identidad que respirara lujo silencioso, ciencia y pureza.</p>
-                    </div>
-                </div>
+    <main class="project-detail-layout">
+        <!-- Sidebar Sticky (Limpio) -->
+        <aside class="detail-sticky-col">
+            <a href="gallery.html" style="font-family: var(--font-mono); margin-bottom: 40px; display: block;">← Volver</a>
+            
+            <h1 class="detail-title-large" id="dyn-title">Cargando...</h1>
+            
+            <p id="dyn-desc" style="margin-bottom: 40px; font-size: 1.1rem; opacity: 0.8; line-height: 1.6;">...</p>
 
-                <!-- Galería -->
-                <div class="project-gallery">
-                    <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?q=80&w=2574&auto=format&fit=crop" alt="Detalle Branding 1" class="gallery-img" loading="eager">
-                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop" alt="Detalle Branding 2" class="gallery-img" loading="lazy">
-                    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=1780&auto=format&fit=crop" alt="Detalle Branding 3" class="gallery-img" loading="lazy">
-                </div>
+            <div class="detail-meta-list">
+                <div class="meta-item"><h4>Cliente</h4> <p id="dyn-client">-</p></div>
+                <div class="meta-item"><h4>Año</h4> <p id="dyn-year">-</p></div>
+                <div class="meta-item"><h4>Servicios</h4> <p id="dyn-services" style="text-align: right;">-</p></div>
+            </div>
+            <!-- Herramientas movidas a la sección Solución -->
+        </aside>
+
+        <!-- Contenido Scroll -->
+        <div class="detail-scroll-col">
+            <div class="detail-image-block">
+                <img id="dyn-hero-img" src="" alt="Hero">
+            </div>
+            
+            <div id="dynamic-gallery-container"></div>
+
+            <!-- Contenedor Narrativa (Desafío / Solución + Toolkit) -->
+            <div id="dyn-narrative-container"></div>
+
+            <div id="dyn-quote-container" class="project-quote-section" style="display:none;">
+                <p class="review-quote-editorial">"<span id="dyn-quote-text">...</span>"</p>
+                <div class="review-author-editorial" id="dyn-quote-author" style="margin-top: 30px;">Cliente</div>
+            </div>
+
+            <div style="padding: 100px; text-align: center; background-color: var(--accent-color); color: white;">
+                <p style="font-family: var(--font-mono); margin-bottom: 10px;">Siguiente Proyecto</p>
+                <a href="" id="next-project-link" style="font-size: 3rem; font-weight: 700; text-transform: uppercase;">
+                    <span id="next-project-name">Cargando...</span> ->
+                </a>
             </div>
         </div>
-
-        <section class="case-study-section">
-            <div class="case-grid">
-                <div class="case-col">
-                    <h3>El Desafío</h3>
-                    <p>El mercado de la cosmética natural está saturado de estéticas rústicas y artesanales. Avsten necesitaba posicionarse en un segmento premium, compitiendo con marcas de lujo establecidas, sin perder su esencia orgánica.</p>
-                </div>
-                <div class="case-col">
-                    <h3>La Solución</h3>
-                    <p>Optamos por un enfoque de "lujo clínico". Utilizamos una tipografía serifa afilada que evoca elegancia editorial, contrastada con un sistema de retículas muy estructurado inspirado en los prospectos médicos.</p>
-                </div>
-            </div>
-        </section>
-
-        <a href="index.html" class="next-project">
-            <span class="next-label">Siguiente Proyecto</span>
-            <h2 class="next-title">Lumière Editorial</h2>
-        </a>
-
-        <footer class="site-footer" id="theFooter">
-            <div class="footer-columns">
-                <div class="footer-col">
-                    <h4 class="footer-title">Sígueme</h4>
-                    <div class="footer-links">
-                        <a href="https://www.instagram.com/is4.54i/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link" target="_blank" rel="noopener">Linkedin</a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Contacto</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mipuelma@uc.cl" class="footer-link">MIPUELMA@UC.CL</a>
-                        <span class="footer-text">(+569) 6682 2790</span>
-                        <span class="footer-text">SANTIAGO - CHILE</span>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Menú</h4>
-                    <div class="footer-links">
-                        <a href="about.html" class="footer-link">SOBRE MÍ</a>
-                        <a href="index.html" class="footer-link">PROYECTOS</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-logo-large">ISABEL PUELMA</div>
-        </footer>
     </main>
+    
+    <!-- Scripts corregidos -->
+    <script src="data.js"></script>
     <script src="portafolio.js"></script>
 </body>
 </html>

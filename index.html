@@ -3,221 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabel Puelma | Diseño Estratégico & Branding</title>
-    <meta name="description" content="Portafolio de diseño multidisciplinario enfocado en branding, dirección de arte y diseño web.">
-    
-    <!-- CSS Global -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- SEO & Metadatos -->
+    <title>Isabel Puelma | Diseño Estratégico</title>
+    <!-- META DESCRIPCIÓN POTENCIADA -->
+    <meta name="description" content="Diseño Estratégico y Visual por Isabel Puelma. Transformo marcas mediante Branding y sistemas de diseño escalables. Santiago, Chile.">
+    <meta name="author" content="Isabel Puelma">
+    <meta name="keywords" content="diseño estratégico, branding, diseño web, dirección de arte, packaging, sistemas de diseño, santiago, chile">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isabelpuelma.cl/">
+    <meta property="og:title" content="Isabel Puelma | Diseño Estratégico & Visual">
+    <meta property="og:description" content="Ayudo a marcas ambiciosas a encontrar su voz y crear sistemas de diseño escalables.">
+    <meta property="og:image" content="https://isabelpuelma.cl/isabelpuelma.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Isabel Puelma | Diseño Estratégico">
+    <meta property="twitter:description" content="Ayudo a marcas ambiciosas a encontrar su voz.">
+    <meta property="twitter:image" content="https://isabelpuelma.cl/isabelpuelma.jpg">
+
+    <link rel="icon" href="isa.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
+    
+    <!-- ========================================== -->
+    <!-- SPLASH SCREEN INTRO (INTERACTIVA) -->
+    <!-- ========================================== -->
+    <div class="splash-screen" id="splashOverlay">
+        <div class="splash-logo-container">
+            <!-- Usamos tu logo SVG -->
+            <img src="isabelpuelma.svg" alt="Isabel Puelma Intro" class="splash-logo-img">
+        </div>
+    </div>
 
-    <!-- Header -->
+    <!-- SCRIPT DE CONTROL DE INTRO -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const splash = document.getElementById('splashOverlay');
+            
+            // Verificamos si ya vio la intro en esta sesión
+            if (!sessionStorage.getItem('introShown')) {
+                
+                let isDismissing = false;
+
+                const startFadeOut = () => {
+                    if (isDismissing) return; 
+                    isDismissing = true;
+                    
+                    splash.classList.add('hidden'); 
+                    sessionStorage.setItem('introShown', 'true');
+                };
+
+                // Fallback Automático
+                const autoTimer = setTimeout(startFadeOut, 3500);
+
+                // Interacción Inteligente
+                setTimeout(() => {
+                    window.addEventListener('mousemove', startFadeOut, { once: true });
+                    window.addEventListener('click', startFadeOut, { once: true });
+                    window.addEventListener('touchstart', startFadeOut, { once: true }); 
+                }, 500);
+
+            } else {
+                splash.style.display = 'none';
+            }
+        });
+    </script>
+    <!-- ========================================== -->
+
     <header class="header">
-        <div class="brand-name">Isabel Puelma<span class="dot">.</span></div>
+        <a href="index.html" class="brand-name">
+            <img src="isabelpuelma.svg" alt="Isabel Puelma" class="brand-logo-img">
+        </a>
         <nav class="nav-menu">
+            <a href="gallery.html" class="nav-link">Archivo</a>
+            <a href="index.html" class="nav-link active">Índice</a>
             <a href="about.html" class="nav-link">Sobre mí</a>
-            <a href="index.html" class="nav-link active">Proyectos</a>
             <a href="contact.html" class="nav-link">Contacto</a>
         </nav>
-        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-        </div>
+        <div class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></div>
     </header>
-
-    <!-- Menú Móvil -->
     <div class="mobile-nav-overlay" id="mobileNav">
+        <a href="gallery.html" class="mobile-link">Archivo</a>
+        <a href="index.html" class="mobile-link">Índice</a>
         <a href="about.html" class="mobile-link">Sobre mí</a>
-        <a href="index.html" class="mobile-link">Proyectos</a>
         <a href="contact.html" class="mobile-link">Contacto</a>
     </div>
 
-    <!-- Scroll Btn -->
-    <button id="scrollToFooterBtn" class="scroll-btn-floating" aria-label="Ir al pie de página">
-        <i class="ph ph-arrow-down"></i>
-    </button>
-
-    <main class="main-content">
-
-        <!-- Proyecto 1 -->
-        <section class="project-section">
-            <div class="info-column">
-                <div>
-                    <span class="project-index">01 — 2024</span>
-                    <a href="proyect.html">
-                        <h2 class="project-title">CODU<br>Branding</h2>
-                    </a>
-                    <div class="project-tags">
-                        <span class="tag">Branding</span>
-                        <span class="tag">Web</span>
-                    </div>
+    <main>
+        <section class="hero-minimal">
+            <div class="hero-top-row">
+                <div class="status-badge reveal-element active">
+                    <span class="status-dot"></span> Disponible para proyectos
                 </div>
-                <div>
-                    <p class="description-text">Identidad visual que conecta tecnología y humanidad, creando una experiencia de marca coherente y memorable.</p>
-                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
-                </div>
+                <span class="reveal-element active" style="font-family: var(--font-mono); text-transform: uppercase;">Santiago, CL</span>
             </div>
-            <div class="image-column">
-                <a href="proyect.html" class="project-image-link">
-                    <div class="project-image-container">
-                        <!-- Carga prioritaria (Eager) porque está arriba -->
-                        <img src="https://github.com/isapuelma/Trabajo-Final/blob/main/img/codu.jpg" alt="CODU Branding Identidad" class="project-image" width="800" height="600">
-                    </div>
-                </a>
+            
+            <div class="hero-center">
+                <h1 class="display-text reveal-element active">
+                    Diseño<br>
+                    <span style="color: var(--accent-color);">Estratégico</span><br>
+                    & Visual<span style="color: var(--highlight-color);">.</span>
+                </h1>
             </div>
-            <div class="project-footer">
-                <div class="project-index">(01)</div>
-                <div class="project-meta">
-                    <a href="proyect.html">CODU - BRANDING</a>
-                    <span>2024</span>
+
+            <div class="hero-footer-row">
+                <p class="hero-intro-text reveal-element active">
+                    Ayudo a marcas a encontrar su voz y crear sistemas de diseño escalables.
+                </p>
+                <div class="hero-scroll-icon reveal-element active">
+                    <i class="ph ph-arrow-down"></i>
                 </div>
             </div>
         </section>
 
-        <!-- Proyecto 2 -->
-        <section class="project-section">
-            <div class="info-column">
-                <div>
-                    <span class="project-index">02 — 2024</span>
-                    <a href="proyect.html">
-                        <h2 class="project-title">ALMA<br>Branding</h2>
-                    </a>
-                    <div class="project-tags">
-                        <span class="tag">Branding</span>
-                        <span class="tag">Ilustración</span>
-                    </div>
-                </div>
-                <div>
-                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
-                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
-                </div>
-            </div>
-            <div class="image-column">
-                <a href="proyect.html" class="project-image-link">
-                    <div class="project-image-container">
-                        <!-- Lazy load para mejor performance -->
-                        <img src="https://github.com/isapuelma/Trabajo-Final/blob/main/img/alma.jpg" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
-                    </div>
-                </a>
-            </div>
-            <div class="project-footer">
-                <div class="project-index">(02)</div>
-                <div class="project-meta">
-                    <a href="proyect.html">ALMA - BRANDING</a>
-                    <span>2024</span>
-                </div>
-            </div>
+        <section id="proyectos">
+            <a href="proyect.html?id=codu" class="project-item">
+                <span class="project-year">2025</span>
+                <span class="project-name">CODU</span>
+                <span class="project-cat">Branding / Web</span>
+                <img src="codu.jpg" class="project-image-hover" alt="Preview" onerror="this.src='https://via.placeholder.com/600x400/122023/FDFFE7?text=CODU'">
+            </a>
+            <a href="proyect.html?id=alma" class="project-item">
+                <span class="project-year">2025</span>
+                <span class="project-name">ALMA</span>
+                <span class="project-cat">Branding</span>
+                <img src="alma.jpg" class="project-image-hover" alt="Preview" onerror="this.src='https://via.placeholder.com/600x400/4D61FE/fff?text=ALMA'">
+            </a>
+            <a href="proyect.html?id=peque" class="project-item">
+                <span class="project-year">2024</span>
+                <span class="project-name">PEQUE</span>
+                <span class="project-cat">Packaging</span>
+                <img src="PEQUE.jpg" class="project-image-hover" alt="Preview" onerror="this.src='https://via.placeholder.com/600x400/F86700/fff?text=PEQUE'">
+            </a>
+             <a href="proyect.html?id=broderie" class="project-item" style="border-bottom:none;">
+                <span class="project-year">2023</span>
+                <span class="project-name">Broderie</span>
+                <span class="project-cat">Branding / Web</span>
+                <img src="broderie.jpg" class="project-image-hover" alt="Preview" onerror="this.src='https://via.placeholder.com/600x400/122023/fff?text=Broderie'">
+            </a>
         </section>
 
-        <!-- Proyecto 3 -->
-        <section class="project-section">
-            <div class="info-column">
-                <div>
-                    <span class="project-index">02 — 2024</span>
-                    <a href="proyect.html">
-                        <h2 class="project-title">Broderie<br>Branding</h2>
-                    </a>
-                    <div class="project-tags">
-                        <span class="tag">Branding</span>
-                        <span class="tag">Web</span>
+        <a href="contact.html" class="focus-section" style="display: block; background-color: var(--highlight-color); color: var(--bg-color); padding: 120px var(--page-margin);">
+            <div class="grid-container no-border" style="border:none; align-items: center;">
+                <div class="col-span-8">
+                    <h2 class="display-text" style="color: var(--bg-color); font-size: 5rem;">¿Empezamos?</h2>
+                    <span class="cta-subtitle">Hablemos de tu proyecto.</span>
+                </div>
+                <div class="col-span-4" style="text-align: right;">
+                    <div style="width: 100px; height: 100px; border: 2px solid currentColor; display: inline-flex; align-items: center; justify-content: center; font-size: 3rem;">
+                         <i class="ph ph-arrow-right"></i>
                     </div>
                 </div>
-                <div>
-                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
-                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
-                </div>
             </div>
-            <div class="image-column">
-                <a href="proyect.html" class="project-image-link">
-                    <div class="project-image-container">
-                        <!-- Lazy load para mejor performance -->
-                        <img src="" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
-                    </div>
-                </a>
-            </div>
-            <div class="project-footer">
-                <div class="project-index">(02)</div>
-                <div class="project-meta">
-                    <a href="proyect.html">ALMA - BRANDING</a>
-                    <span>2024</span>
-                </div>
-            </div>
-        </section>
+        </a>
 
-        <!-- Proyecto 4 -->
-        <section class="project-section">
-            <div class="info-column">
-                <div>
-                    <span class="project-index">02 — 2024</span>
-                    <a href="proyect.html">
-                        <h2 class="project-title">BEHEALTHY<br>Branding</h2>
-                    </a>
-                    <div class="project-tags">
-                        <span class="tag">Branding</span>
-                        <span class="tag">Ilustración</span>
-                    </div>
-                </div>
-                <div>
-                    <p class="description-text">Creación de un universo visual orgánico y sensible, conectando la esencia de la marca con su audiencia.</p>
-                    <a href="proyect.html" class="case-link">VER CASO DE ESTUDIO &rarr;</a>
-                </div>
-            </div>
-            <div class="image-column">
-                <a href="proyect.html" class="project-image-link">
-                    <div class="project-image-container">
-                        <!-- Lazy load para mejor performance -->
-                        <img src="" alt="ALMA Branding Identidad" class="project-image" loading="lazy" width="800" height="600">
-                    </div>
-                </a>
-            </div>
-            <div class="project-footer">
-                <div class="project-index">(02)</div>
-                <div class="project-meta">
-                    <a href="proyect.html">ALMA - BRANDING</a>
-                    <span>2024</span>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- Footer -->
-        <footer class="site-footer" id="theFooter">
-            <div class="footer-columns">
+        <footer class="footer">
+            <div class="footer-grid">
                 <div class="footer-col">
-                    <h4 class="footer-title">Sígueme</h4>
-                    <div class="footer-links">
-                        <a href="https://www.instagram.com/is4.54i/" class="footer-link" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link" target="_blank" rel="noopener">Linkedin</a>
-                    </div>
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Contacto</h4>
+                    <a href="mailto:mipuelma@uc.cl" class="footer-link" style="font-size: 1.2rem;">mipuelma@uc.cl</a>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Contacto</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mipuelma@uc.cl" class="footer-link">MIPUELMA@UC.CL</a>
-                        <span class="footer-text">(+569) 6682 2790</span>
-                        <span class="footer-text">SANTIAGO - CHILE</span>
-                    </div>
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Social</h4>
+                    <a href="https://www.instagram.com/is4.54i/" class="footer-link">Instagram</a><br>
+                    <a href="https://www.linkedin.com/in/isabel-puelma/" class="footer-link">LinkedIn</a>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Menú</h4>
-                    <div class="footer-links">
-                        <a href="about.html" class="footer-link">SOBRE MÍ</a>
-                        <a href="index.html" class="footer-link">PROYECTOS</a>
-                    </div>
+                    <h4 style="text-transform: uppercase; margin-bottom: 20px; opacity: 0.5;">Ubicación</h4>
+                    <p>Santiago, Chile</p>
                 </div>
             </div>
-            <div class="footer-logo-large">ISABEL PUELMA</div>
+            <div class="footer-copyright">
+                © 2025 Isabel Puelma. Todos los derechos reservados.
+            </div>
         </footer>
-
-    </main>
-    <script src="portafolio.js"></script>
-</body>
-</html>
-
-
-
+    </m
