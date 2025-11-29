@@ -1,22 +1,22 @@
 :root {
-    /* --- PALETA DE COLOR ESTRATÉGICA --- */
-    --bg-color: #FDFFE7;      /* Amarillo Crema Pálido (Base) */
-    --bg-accent: #EFFF93;     /* Amarillo Ácido (Destacados grandes) */
+    /* --- PALETA DE COLORES --- */
+    --bg-color: #FDFFE7;   
+    --bg-accent: #EFFF93;    
     
-    --text-color: #122023;    /* Gris Carbón (Texto) */
-    --line-color: rgba(18, 32, 35, 0.15); /* Líneas sutiles */
+    --text-color: #122023;   
+    --line-color: rgba(18, 32, 35, 0.15); 
     
-    --accent-color: #4D61FE;  /* Azul Eléctrico (Enlaces, Iconos, Botones) */
-    --highlight-color: #4D61FE; /* Azul consistente (Reemplazo del Naranja) */
+    --accent-color: #4D61FE;  
+    --highlight-color: #4D61FE; 
     
-    --page-margin: 5vw;       /* Márgenes laterales */
+    --page-margin: 5vw;    
     --header-height: 120px;
     
     --font-main: 'Space Grotesk', sans-serif;
     --font-mono: 'Space Grotesk', monospace; 
 }
 
-/* --- SCROLLBAR OCULTO (SOLICITUD DE USUARIO) --- */
+
 ::-webkit-scrollbar { display: none; }
 html { -ms-overflow-style: none; scrollbar-width: none; font-size: 16px; scroll-behavior: smooth; background-color: var(--bg-color); }
 
@@ -50,9 +50,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s cubic-bezier(0.2
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
-/* =========================================
-   2. TYPOGRAFÍA & UTILIDADES
-   ========================================= */
+
 .display-text {
     font-family: var(--font-main);
     font-size: clamp(3.5rem, 8vw, 7rem);
@@ -92,7 +90,7 @@ img { max-width: 100%; display: block; }
     color: var(--highlight-color);
 }
 
-/* Grid System */
+
 .grid-container { display: grid; grid-template-columns: repeat(12, 1fr); border-bottom: 1px solid var(--line-color); width: 100%; }
 .col-span-12 { grid-column: span 12; }
 .col-span-8 { grid-column: span 8; }
@@ -107,9 +105,7 @@ img { max-width: 100%; display: block; }
 .pad-y { padding-top: 100px; padding-bottom: 100px; }
 .pad-header { padding-top: 180px; }
 
-/* =========================================
-   3. NAVEGACIÓN (LOGO)
-   ========================================= */
+
 .header {
     position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height);
     padding: 0 var(--page-margin); display: flex; justify-content: space-between; align-items: center;
@@ -130,31 +126,30 @@ img { max-width: 100%; display: block; }
 .nav-link { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; position: relative; }
 .nav-link::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0%; height: 2px; background-color: var(--accent-color); transition: width 0.3s ease; }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-.hamburger { display: none; cursor: pointer; width: 30px; height: 20px; position: relative; z-index: 1001; }
-.hamburger span { display: block; position: absolute; height: 2px; width: 100%; background: var(--text-color); transition: .25s ease-in-out; }
-.hamburger span:nth-child(1) { top: 0px; }
-.hamburger span:nth-child(2) { top: 9px; }
-.hamburger span:nth-child(3) { top: 18px; }
-.hamburger.open span:nth-child(1) { top: 9px; transform: rotate(135deg); }
+.hamburger { display: none; cursor: pointer; width: 40px; height: 40px; position: relative;  padding: 10px;-webkit-tap-highlight-color: transparent;}
+.hamburger span { display: block; position: absolute; height: 2px; width: 20px; background: var(--text-color); transition: .25s ease-in-out;  left: 10px; }
+.hamburger span:nth-child(1) { top: 10px; }
+.hamburger span:nth-child(2) { top: 19px; }
+.hamburger span:nth-child(3) { top: 28px; }
+.hamburger.open span:nth-child(1) { top: 19px; transform: rotate(135deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; left: -60px; }
-.hamburger.open span:nth-child(3) { top: 9px; transform: rotate(-135deg); }
-.mobile-nav-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: var(--text-color); color: var(--bg-color); z-index: 999; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: translateY(-100%); transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); }
-.mobile-nav-overlay.active { transform: translateY(0); }
-.mobile-link { font-size: 3rem; margin: 15px 0; text-transform: uppercase; font-weight: 700; color: var(--bg-color); }
+.hamburger.open span:nth-child(3) { top: 19px; transform: rotate(-135deg); }
+.mobile-nav-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: var(--text-color); color: var(--bg-color); z-index: 999; display: flex; flex-direction: column; justify-content: center;  align-items: center; 
+    transform: translateY(-100%); transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); gap: 20px;}
+.mobile-link { font-size: 2.5rem; font-weight: 700; text-transform: uppercase;  padding: 20px 40px; min-height: 60px; display: flex; align-items: center; color: var(--bg-color); -webkit-tap-highlight-color: transparent; transition: opacity 0.3s ease;}          
+.mobile-link:active { opacity: 0.7;}
 
-/* =========================================
-   4. HOME & HERO MINIMAL
-   ========================================= */
 .hero-minimal { min-height: 100vh; padding: 140px var(--page-margin) 60px; display: flex; flex-direction: column; justify-content: space-between; background-color: var(--bg-color); position: relative; }
 .hero-top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
 .hero-top-row > span { opacity: 0.5; }
 .status-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border: 1px solid var(--text-color); border-radius: 50px; font-family: var(--font-mono); text-transform: uppercase; font-size: 0.8rem; font-weight: 600; background-color: rgba(255,255,255,0.5); backdrop-filter: blur(5px); }
 .status-dot { width: 10px; height: 10px; background-color: #28C76F; border-radius: 50%; box-shadow: 0 0 0 0 rgba(40, 199, 111, 0.7); animation: pulse 2s infinite; }
-@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(40, 199, 111, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(40, 199, 111, 0); } 100% { box-shadow: 0 0 0 0 rgba(40, 199, 111, 0); } }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(40, 199, 111, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(40, 199, 111, 0); } 100% { box-shadow: 0 0 0 0 rgba(40, 199, 111, 0); }
+                 }
 .hero-intro-text { max-width: 500px; font-size: 1.5rem; line-height: 1.4; opacity: 0.8; }
 .hero-footer-row { display: flex; justify-content: space-between; align-items: flex-end; }
 .hero-scroll-icon { font-size: 2rem; animation: bounce 2s infinite; color: var(--accent-color); }
-@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);}}
 .hero-minimal .display-text { font-size: clamp(4rem, 11vw, 9rem); line-height: 0.9; margin-bottom: 40px; }
 
 .project-item { display: grid; grid-template-columns: 1.5fr 3fr 1fr; align-items: center; padding: 70px var(--page-margin); border-bottom: 1px solid var(--line-color); position: relative; cursor: pointer; transition: all 0.4s ease; }
@@ -165,9 +160,7 @@ img { max-width: 100%; display: block; }
 .project-image-hover { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); width: 500px; height: 350px; object-fit: cover; z-index: 10; pointer-events: none; opacity: 0; transition: opacity 0.2s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 20px 20px 50px rgba(0,0,0,0.3); }
 .project-item:hover .project-image-hover { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(-3deg); }
 
-/* =========================================
-   5. ABOUT PAGE
-   ========================================= */
+
 .about-hero { display: grid; grid-template-columns: 1.2fr 0.8fr; border-bottom: 1px solid var(--line-color); margin-top: var(--header-height); align-items: start; }
 .about-text { padding: 100px var(--page-margin); border-right: 1px solid var(--line-color); }
 .about-image-container { position: sticky; top: var(--header-height); height: calc(100vh - var(--header-height)); overflow: hidden; border-left: 1px solid var(--line-color); align-self: start; }
@@ -192,9 +185,7 @@ img { max-width: 100%; display: block; }
 .p-content h3 { font-size: 2rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: -0.02em; }
 .p-content p { font-size: 1.1rem; opacity: 0.7; max-width: 650px; line-height: 1.6; }
 
-/* =========================================
-   6. EXPERTISE & REVIEWS (GRID)
-   ========================================= */
+
 .services-carousel-section { border-bottom: 1px solid var(--line-color); position: relative; overflow: visible; }
 .services-header-row { display: flex; justify-content: space-between; align-items: flex-end; padding: 100px var(--page-margin) 60px; border-bottom: 1px solid var(--line-color); background-color: var(--bg-color); }
 .services-header-row h2 { margin-bottom: 0; line-height: 1; }
@@ -224,9 +215,7 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
 .review-controls-grid .grid-control-btn:hover { background-color: transparent; color: var(--accent-color); opacity: 1; transform: translateX(5px); }
 .review-controls-grid .prev-btn:hover { transform: translateX(-5px); }
 
-/* =========================================
-   7. GALERÍA & DETALLE
-   ========================================= */
+
 .filter-bar { padding: 40px var(--page-margin); border-bottom: 1px solid var(--line-color); display: flex; gap: 15px; flex-wrap: wrap; }
 .filter-btn { background: transparent; border: 1px solid var(--line-color); padding: 12px 24px; font-family: var(--font-mono); text-transform: uppercase; font-weight: 600; cursor: pointer; transition: all 0.3s; }
 .filter-btn:hover, .filter-btn.active { background-color: var(--text-color); color: var(--bg-color); }
@@ -240,7 +229,7 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
 .overlay-title { font-size: 2.5rem; font-weight: 700; text-transform: uppercase; transform: translateY(20px); transition: transform 0.3s; }
 .gallery-item:hover .overlay-title { transform: translateY(0); }
 
-/* === DETALLE DE PROYECTO === */
+
 .project-detail-layout { display: grid; grid-template-columns: 1fr 2fr; margin-top: var(--header-height); border-bottom: 1px solid var(--line-color); }
 .detail-sticky-col { position: sticky; top: var(--header-height); border-right: 1px solid var(--line-color); padding: 60px var(--page-margin); align-self: start; }
 .detail-title-large { font-size: 4rem; line-height: 1; text-transform: uppercase; margin-bottom: 40px; }
@@ -265,9 +254,7 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
 .footer-link:hover { color: var(--highlight-color); }
 .footer-copyright { grid-column: span 3; margin-top: 40px; font-family: var(--font-mono); opacity: 0.5; font-size: 0.8rem; text-transform: uppercase; }
 
-/* =========================================
-   8. RESPONSIVE (MÓVIL)
-   ========================================= */
+
 @media (max-width: 1200px) {
     a.service-card { grid-column: span 6; }
     a.service-card:nth-child(3n) { border-right: 1px solid var(--line-color); }
@@ -301,11 +288,24 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
     .hero-minimal { padding-top: 120px; }
     .hero-minimal .display-text { font-size: 3.5rem; }
     .hero-top-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .detail-sticky-col { padding: 40px var(--page-margin); border-right: none; border-bottom: 1px solid var(--line-color);}
+    .detail-title-large { font-size: 2.5rem; }
+    .detail-meta-list { margin-bottom: 40px; }
+    .contact-left { border-right: none; border-bottom: 1px solid var(--line-color); padding: 60px var(--page-margin);}
+    .contact-right { padding: 60px var(--page-margin); }
+    .contact-form { max-width: 100%; }
+    .form-group input, .form-group textarea { font-size: 1rem; padding: 15px 0;}
+    .submit-btn { width: 100%; padding: 18px 30px; font-size: 1rem; }
+    
+    .bio-text-large { font-size: 1.1rem; line-height: 1.6; }
+    .experience-list { margin-top: 40px; }
+    .process-section-dark { padding: 60px var(--page-margin); }
+    .p-num { font-size: 2rem; min-width: 60px; }
+    .manifesto-text { font-size: 1.8rem; line-height: 1.4; }
+}
 }
 
-/* =========================================
-   9. ANIMACIONES & EXTRAS
-   ========================================= */
+
 .reveal-element { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); will-change: opacity, transform; }
 .reveal-element.active { opacity: 1; transform: translateY(0); }
 .loader-container { grid-column: span 12; display: flex; justify-content: center; padding: 100px 0; }
@@ -315,22 +315,19 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
 .back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top:hover { background-color: var(--highlight-color); transform: translateY(-5px); }
 
-/* =========================================
-   10. SPLASH SCREEN (INTRO)
-   ========================================= */
+
 .splash-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--bg-accent); /* Fondo Amarillo Ácido */
+    background-color: var(--bg-accent);
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    /* Transición ULTRA smooth de 1.5s con curva personalizada */
     transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -339,42 +336,29 @@ a.service-card:hover .service-arrow { opacity: 1; transform: translate(5px, -5px
     pointer-events: none;
 }
 
-.splash-logo-container {
-    overflow: hidden;
-}
+.splash-logo-container { overflow: hidden; }
 
-.splash-logo-img {
-    width: 600px; /* Logo GIGANTE */
-    max-width: 90vw;
-    height: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    /* Animación más lenta (3s) y elegante */
-    animation: splashLogoSequence 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
+.splash-logo-img { width: 600px; max-width: 90vw; height: auto; opacity: 0; transform: translateY(20px); animation: splashLogoSequence 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;}
 
 @keyframes splashLogoSequence {
     0% { opacity: 0; transform: translateY(30px) scale(0.95); }
     40% { opacity: 1; transform: translateY(0) scale(1); }
-    80% { opacity: 1; transform: translateY(0) scale(1); } /* Se mantiene visible más tiempo */
+    80% { opacity: 1; transform: translateY(0) scale(1); } 
     100% { opacity: 0; transform: translateY(-20px) scale(1.05); }
 }
 
-/* =========================================
-   11. AJUSTES PARA MÓVILES PEQUEÑOS (iPhone SE, etc.)
-   ========================================= */
+
 @media (max-width: 380px) {
-    .hero-minimal .display-text {
-        font-size: 2.8rem; /* Reducimos de 3.5rem a 2.8rem */
-    }
-    .display-text {
-        font-size: 2.5rem;
-    }
+    .hero-minimal .display-text {font-size: 2.8rem;}
+    .display-text {font-size: 2.5rem;}
+    .project-name {font-size: 2.5rem;}
+    .detail-title-large {font-size: 2rem;}
+    .mobile-link {font-size: 2rem; padding: 15px 30px;}
+    .contact-left, .contact-right {padding: 40px 20px;}
+    .form-group input, .form-group textarea {font-size: 0.95rem;}
+    .manifesto-text {font-size: 1.5rem;}
 }
 
-/* =========================================
-   13. TOAST NOTIFICATION (PREMIUM)
-   ========================================= */
 .toast-container {
     position: fixed;
     bottom: 40px;
